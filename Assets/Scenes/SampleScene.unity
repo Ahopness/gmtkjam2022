@@ -202,7 +202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   m_LocalRotation: {x: 0.21562457, y: -0, z: -0, w: 0.9764763}
-  m_LocalPosition: {x: 0, y: 2.64, z: -10}
+  m_LocalPosition: {x: 0, y: 4.68, z: -11.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -257,6 +257,7 @@ MonoBehaviour:
   ObjectToAttach: {fileID: 5423543090985648579, guid: 474fbea85b1542542b896d49c3f07833,
     type: 3}
   sensitivity: 0.1
+  levitationvalue: 4
 --- !u!1 &386804955
 GameObject:
   m_ObjectHideFlags: 0
