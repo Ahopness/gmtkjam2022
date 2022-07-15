@@ -5,17 +5,16 @@ using UnityEngine;
 public class Dice : MonoBehaviour
 {
     Rigidbody DiceRig;
-    int DiceSizes;
 
 
-    public float[] sizes;
+    public float[] DiceSizes;
 
     Vector3[] sides =
     { Vector3.up,       // 1(+) or 6(-)
      Vector3.right,    // 2(+) or 5(-)
      Vector3.forward }; // 3(+) or 4(-)
  
-    float WhichIsUp()
+    int WhichIsUp()
     {
         var maxY = float.NegativeInfinity;
         var result = -1;
@@ -40,7 +39,7 @@ public class Dice : MonoBehaviour
     
     void ChangeSize()
     {
-
+        
     }
 
     // Start is called before the first frame update
@@ -50,9 +49,21 @@ public class Dice : MonoBehaviour
     }
 
     // Update is called once per frame
+    public float massmultiplier = 1f;
     void Update()
     {
         if (DiceRig.velocity == Vector3.zero)
-            print(WhichIsUp());
+        {
+            //float DiceSizeUp = DiceSizes[WhichIsUp()];
+            float DiceSizeDirect = (float)WhichIsUp();
+
+            if (transform.localScale.x != DiceSizeDirect)
+            {
+                transform.localScale = Vector3.one * DiceSizeDirect;
+                DiceRig.mass = DiceSizeDirect * massmultiplier;
+            }
+        }
+            
+
     }
 }
