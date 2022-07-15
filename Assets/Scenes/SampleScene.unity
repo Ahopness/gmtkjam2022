@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571343, b: 0.30692208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 1898595178}
   - component: {fileID: 1898595183}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Dice
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -812,7 +812,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898595177}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4681952975935014232, guid: b4826ea086b803d9ba6b82c0bdd236a0, type: 3}
 --- !u!4 &1898595182
 Transform:
   m_ObjectHideFlags: 0
@@ -840,3 +840,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4902b3dac68c16a43b226897b0a1737d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiceSizes: []
+  massmultiplier: 1
