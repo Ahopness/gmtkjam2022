@@ -8,6 +8,8 @@ public class Dice : MonoBehaviour
     int DiceSizes;
 
 
+    public float[] sizes;
+
     Vector3[] sides =
     { Vector3.up,       // 1(+) or 6(-)
      Vector3.right,    // 2(+) or 5(-)
@@ -35,16 +37,22 @@ public class Dice : MonoBehaviour
         }
         return result;
     }
+    
+    void ChangeSize()
+    {
+
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        DiceRig = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        print(WhichIsUp());
+        if (DiceRig.velocity == Vector3.zero)
+            print(WhichIsUp());
     }
 }
