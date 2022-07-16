@@ -23,7 +23,7 @@ public class player : MonoBehaviour
             RaycastHit TheHit;
             if (Physics.Raycast(TryHit, out TheHit))
             {
-                if (TheHit.transform.CompareTag("Player"))
+                if (TheHit.transform.GetComponent<Dice>())
                 {
                     CurrentObjectAttach = Instantiate(ObjectToAttach, TheHit.point, Quaternion.identity);
                     CurrentObjectAttach.GetComponent<ConfigurableJoint>().connectedBody = TheHit.rigidbody;

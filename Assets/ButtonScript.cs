@@ -39,7 +39,7 @@ public class ButtonScript : MonoBehaviour
     public float PerlinSize;
     void Update()
     {
-        thisrect.localRotation = Quaternion.Lerp(thisrect.localRotation, Quaternion.Euler(PerlinWithSeed(sneedX) *100f, PerlinWithSeed(sneedY) *100f, 0f), Time.deltaTime);
+        thisrect.localRotation = Quaternion.Lerp(thisrect.localRotation, Quaternion.Euler(Mathf.Lerp(-rotationextention, rotationextention, PerlinWithSeed(sneedX)), Mathf.Lerp(-rotationextention, rotationextention, PerlinWithSeed(sneedY)), 0f), Time.deltaTime);
         CheckPerlinWall();
         print(PerlinPos);
     }

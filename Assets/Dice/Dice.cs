@@ -50,16 +50,17 @@ public class Dice : MonoBehaviour
 
     // Update is called once per frame
     public float massmultiplier = 1f;
+    public int currentdicesize;
     void Update()
     {
         if (DiceRig.velocity.magnitude < 0.001f)
         {
-            print(WhichIsUp());
             float DiceSizeUp = DiceSizes[WhichIsUp()-1];
             //float DiceSizeDirect = (float)WhichIsUp();
 
             if (transform.localScale.x != DiceSizeUp)
             {
+                currentdicesize = WhichIsUp();
                 transform.localScale = Vector3.one * DiceSizeUp;
                 DiceRig.mass = DiceSizeUp * massmultiplier;
             }
