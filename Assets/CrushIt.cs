@@ -10,6 +10,10 @@ public class CrushIt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Dice[] WorldDices = Object.FindObjectsOfType<Dice>();
+
+
+
         DiceValueCounter = GetComponentInChildren<TMPro.TextMeshPro>();
         DiceValueCounter.text = DiceValueNeeded.ToString();
     }
@@ -34,7 +38,7 @@ public class CrushIt : MonoBehaviour
 
         DiceValueCounter.text = (DiceValueNeeded - totalweight).ToString();
 
-        if (totalweight == DiceValueNeeded)
+        if (totalweight >= DiceValueNeeded)
             Destroy(gameObject);
         //GlobalSystem.Spawndice()
     }
