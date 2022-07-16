@@ -14,6 +14,7 @@ public class player : MonoBehaviour
     }
     private GameObject CurrentObjectAttach;
     public float levitationvalue;
+    public float levitationspeed;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -38,7 +39,7 @@ public class player : MonoBehaviour
         if (CurrentObjectAttach != null)
         {
             Vector3 GrabPosition = CurrentObjectAttach.transform.position;
-            CurrentObjectAttach.transform.position = new Vector3(GrabPosition.x + Input.GetAxis("Mouse X") * sensitivity, Mathf.Lerp(GrabPosition.y, levitationvalue, Time.deltaTime), GrabPosition.z + Input.GetAxis("Mouse Y") * sensitivity);
+            CurrentObjectAttach.transform.position = new Vector3(GrabPosition.x + Input.GetAxis("Mouse X") * sensitivity, Mathf.Lerp(GrabPosition.y, levitationvalue, levitationspeed * Time.deltaTime), GrabPosition.z + Input.GetAxis("Mouse Y") * sensitivity);
         }
     }
 }

@@ -52,18 +52,19 @@ public class Dice : MonoBehaviour
     public float massmultiplier = 1f;
     void Update()
     {
-        if (DiceRig.velocity == Vector3.zero)
+        if (DiceRig.velocity.magnitude < 0.001f)
         {
-            //float DiceSizeUp = DiceSizes[WhichIsUp()];
-            float DiceSizeDirect = (float)WhichIsUp();
+            print(WhichIsUp());
+            float DiceSizeUp = DiceSizes[WhichIsUp()-1];
+            //float DiceSizeDirect = (float)WhichIsUp();
 
-            if (transform.localScale.x != DiceSizeDirect)
+            if (transform.localScale.x != DiceSizeUp)
             {
-                transform.localScale = Vector3.one * DiceSizeDirect;
-                DiceRig.mass = DiceSizeDirect * massmultiplier;
+                transform.localScale = Vector3.one * DiceSizeUp;
+                DiceRig.mass = DiceSizeUp * massmultiplier;
             }
         }
-            
+        
 
     }
 }
