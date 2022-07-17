@@ -8,67 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 5614858195470227472}
   - component: {fileID: 4303677387040183735}
   - component: {fileID: 6415248167369308247}
   - component: {fileID: 8400449313485902828}
-=======
-  - component: {fileID: 5754383826391745073}
-  - component: {fileID: 5754383826391745072}
-  m_Layer: 0
-  m_Name: Ghan Ghorra
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5754383826391745073
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5754383826391745075}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.038211983, y: 2.1557097, z: -10.316464}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5754383827412086561}
-  - {fileID: 5754383826742434175}
-  - {fileID: 5754383827914995109}
-  - {fileID: 5754383827336176802}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5754383826391745072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5754383826391745075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae2b9dc0d7d7e894c8f9d18c3ee928e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countdown: 5
---- !u!1 &5754383826742434174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5754383826742434175}
-  - component: {fileID: 5754383826742434170}
-  - component: {fileID: 5754383826742434173}
-  - component: {fileID: 5754383826742434172}
-  - component: {fileID: 5754383826742434171}
->>>>>>> 1fe4ed290bcccebd05328f716d0a538706fbe5d3
   m_Layer: 0
   m_Name: Smash2
   m_TagString: Untagged
@@ -220,7 +163,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6c7bdc0c7b51ae04a9e779844be490e9, type: 2}
+  - {fileID: 2100000, guid: fdc5d5ea8f742938daf6ba54cc590e80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -458,12 +401,12 @@ MonoBehaviour:
   m_margin: {x: 6, y: 0, z: 6, w: 1.1423535}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 5754383827336176800}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 5754383827336176800}
+  m_maskType: 0
 --- !u!1 &5754383827412086560
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +627,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 16c45f1b404c6784d972386ad29df950, type: 2}
+  - {fileID: 2100000, guid: 1e4e98d1a8e1cda39a658011735542d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -767,7 +710,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 16c45f1b404c6784d972386ad29df950, type: 2}
+  - {fileID: 2100000, guid: 1e4e98d1a8e1cda39a658011735542d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
